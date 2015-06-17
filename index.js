@@ -9,17 +9,17 @@ var cssUrl = '//www.gstatic.com/authtoolkit/css/gitkit.css';
 var tick = require('./lib/tick');
 var hideElements = require('./lib/hide-elements');
 var showElements = require('./lib/show-elements');
-var signinConfig = require('./lib/signin-config');
-var signinButtons = require('./lib/signin-buttons');
+var loginConfig = require('./lib/login-config');
+var loginButtons = require('./lib/login-buttons');
 var optionalCallback = require('./lib/optional-callback');
 
-function signin(selector, opts, cb){
+function login(selector, opts, cb){
 
   opts = opts || {};
 
   cb = optionalCallback(cb);
 
-  var config = signinConfig(opts);
+  var config = loginConfig(opts);
 
   var elements = document.querySelectorAll(selector);
 
@@ -38,12 +38,12 @@ function signin(selector, opts, cb){
     }
 
     // need to call this function right away to bind to window `load` event
-    signinButtons(elements, config);
+    loginButtons(elements, config);
     // load the css after we wire up the JS because it doesn't prolong the `load` event
     loadCss(cssUrl, tick(done));
   });
 }
 
 module.exports = {
-  signin: signin
+  login: login
 };

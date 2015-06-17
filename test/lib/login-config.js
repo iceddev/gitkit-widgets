@@ -3,15 +3,15 @@
 var _ = require('lodash');
 var expect = require('expect');
 
-var signinConfig = require('../../lib/signin-config');
+var loginConfig = require('../../lib/login-config');
 
-describe('signin-config', function(){
+describe('login-config', function(){
 
   var cleanConfig = {
-    signinUrl: '/login',
-    signoutUrl: '/logout',
+    loginUrl: '/login',
+    logoutUrl: '/logout',
     popup: true,
-    forceSignin: true,
+    forceLogin: true,
     cookie: 'clean'
   };
 
@@ -24,7 +24,7 @@ describe('signin-config', function(){
   };
 
   it('normalizes an options object', function(done){
-    var config = signinConfig(cleanConfig);
+    var config = loginConfig(cleanConfig);
 
     var expected = {
       widgetUrl: '/login',
@@ -39,7 +39,7 @@ describe('signin-config', function(){
   });
 
   it('uses Gitkit properties before clean properties', function(done){
-    var config = signinConfig(_.assign({}, cleanConfig, dirtyConfig));
+    var config = loginConfig(_.assign({}, cleanConfig, dirtyConfig));
 
     var expected = {
       widgetUrl: '/signin',
