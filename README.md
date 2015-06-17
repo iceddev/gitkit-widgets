@@ -15,7 +15,7 @@ var config = {
   popup: true
 };
 
-gitkit.sigin('#loginButton', config, function(err){
+gitkit.signin('#loginButton', config, function(err){
   // button is ready
 });
 ```
@@ -55,6 +55,10 @@ Whether a user is forced to login immediately.
 ##### `options.cookie` (default: 'gtoken')
 
 The cookie where a user's login token is saved.
+
+#### `callback`
+
+Optional callback that is invoked upon completion of signin button construction.
 
 ## License
 
