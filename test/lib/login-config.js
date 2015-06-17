@@ -52,4 +52,19 @@ describe('login-config', function(){
     expect(config).toEqual(expected);
     done();
   });
+
+  it('has a default config', function(done){
+    var config = loginConfig();
+
+    var expected = {
+      widgetUrl: '/login',
+      signOutUrl: '/',
+      popupMode: false,
+      loginFirst: false,
+      cookieName: 'gtoken'
+    };
+
+    expect(config).toEqual(expected);
+    done();
+  });
 });
