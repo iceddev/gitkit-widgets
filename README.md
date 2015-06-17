@@ -22,7 +22,7 @@ gitkit.login('#loginButton', config, function(err){
 
 ## API
 
-### `login(selector, options, [callback])`
+### `login(selector, [options], [callback])`
 
 Attach a login widget, configured by `options`, to all elements that match the `selector`.
 
@@ -32,7 +32,7 @@ Any valid selector to pass to `document.querySelectorAll`.
 
 #### `options`
 
-Configuration for the login button. Takes any of the [Gitkit widget options](https://developers.google.com/identity/toolkit/web/setup-frontend#page_with_sign_in_button) or nicer options as defined below.
+Optional configuration for the login button. Takes any of the [Gitkit widget options](https://developers.google.com/identity/toolkit/web/setup-frontend#page_with_sign_in_button) or nicer options as defined below.
 
 __Note: all Gitkit widget option names take precedence over the names below.__
 

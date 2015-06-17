@@ -15,8 +15,6 @@ var optionalCallback = require('./lib/optional-callback');
 
 function login(selector, opts, cb){
 
-  opts = opts || {};
-
   cb = optionalCallback(cb);
 
   var config = loginConfig(opts);
