@@ -48,10 +48,6 @@ The location a user is redirected to during logout.
 
 Whether the login page should show in a popup or not.
 
-##### `options.forceLogin` (default: false)
-
-Whether a user is forced to login immediately.
-
 ##### `options.cookie` (default: 'gtoken')
 
 The cookie where a user's login token is saved.

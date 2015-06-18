@@ -11,7 +11,6 @@ describe('login-config', function(){
     loginUrl: '/login',
     logoutUrl: '/logout',
     popup: true,
-    forceLogin: true,
     cookie: 'clean'
   };
 
@@ -19,7 +18,6 @@ describe('login-config', function(){
     widgetUrl: '/signin',
     signOutUrl: '/signout',
     popupMode: false,
-    loginFirst: false,
     cookieName: 'dirty'
   };
 
@@ -30,7 +28,6 @@ describe('login-config', function(){
       widgetUrl: '/login',
       signOutUrl: '/logout',
       popupMode: true,
-      loginFirst: true,
       cookieName: 'clean'
     };
 
@@ -45,7 +42,6 @@ describe('login-config', function(){
       widgetUrl: '/signin',
       signOutUrl: '/signout',
       popupMode: false,
-      loginFirst: false,
       cookieName: 'dirty'
     };
 
@@ -60,7 +56,6 @@ describe('login-config', function(){
       widgetUrl: '/login',
       signOutUrl: '/',
       popupMode: false,
-      loginFirst: false,
       cookieName: 'gtoken'
     };
 
