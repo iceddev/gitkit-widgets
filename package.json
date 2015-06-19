@@ -1,6 +1,6 @@
 {
   "name": "gitkit-widgets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convenience library for initializing Google Identity Toolkit widgets",
   "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com)",
   "contributors": [],
